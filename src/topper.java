@@ -2,19 +2,19 @@ import java.util.*;
 public class topper {
     public static void main(String[] args)
     {
-        int n,evens=0,odds=0,k;
+        int number,evens=0,odds=0,k;
         Scanner sc=new Scanner(System.in);
-        n=sc.nextInt();
-        while(n>0)
+        number =sc.nextInt();
+        while(number >0)
         {
-            k=n%10;
+            k= number %10;
             if(k%2==0)
             {
                 evens=evens+k;
             }
             else
                 odds = odds + k;
-            n=n/10;
+            number = number /10;
         }
         if(evens==odds)
         {
